@@ -1,17 +1,17 @@
 {
   "name": "ember-glamor",
   "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "description": "Use glamor in your Ember project",
   "keywords": [
     "ember-addon"
   ],
   "license": "MIT",
-  "author": "",
+  "author": "Dustin Farris <dustin@farris.io>",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": "https://github.com/dustinfarris/ember-glamor",
   "scripts": {
     "build": "ember build",
     "start": "ember server",
@@ -41,6 +41,7 @@
     "ember-load-initializers": "^0.5.1",
     "ember-resolver": "^2.0.3",
     "ember-welcome-page": "^1.0.3",
+    "glamor": "^2.20.12",
     "loader.js": "^4.0.10"
   },
   "engines": {
