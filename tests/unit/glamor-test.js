@@ -1,5 +1,7 @@
 import { module, test } from 'ember-qunit';
 
+import 'glamor/reset';
+
 import {
   css,
   flush,
@@ -7,7 +9,9 @@ import {
   speedy
 } from 'glamor';
 
+
 module('Unit | vendor imports | glamor');
+
 
 test('it exports css', function(assert) {
   assert.ok(css);
@@ -23,4 +27,8 @@ test('it exports simulate', function(assert) {
 
 test('it exports speedy', function(assert) {
   assert.ok(speedy);
+});
+
+test('importing reset', function(assert) {
+  assert.ok(true);
 });
