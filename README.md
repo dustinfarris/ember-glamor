@@ -1,26 +1,64 @@
 # ember-glamor
 
-This README outlines the details of collaborating on this Ember addon.
+Use [glamor](https://github.com/threepointone/glamor) in your Ember project.
+
 
 ## Installation
 
-* `git clone <repository-url>` this repository
-* `cd ember-glamor`
-* `npm install`
-* `bower install`
+```
+ember install ember-glamor
+```
 
-## Running
 
-* `ember serve`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+## Usage
 
-## Running Tests
+```js
+import Ember from 'ember';
+import hbs from 'htmlbars-inline-precompile';
+import { css } from 'glamor';
+
+
+const styles = {
+  red: css({
+    backgroundColor: 'red'
+  }),
+  blueGreen: css({
+    backgroundColor: 'blue',
+    ':hover': {
+      backgroundColor: 'green'
+    }
+  })
+};
+
+
+export default Ember.Component.extend({
+
+  styles,
+
+  layout: hbs`
+
+    <div class={{styles.red}}>
+      This is red.
+    </div>
+
+    <div class={{styles.blueGreen}}>
+      This is blue, and green on hover.
+    </div>
+
+  `
+});
+```
+
+
+## Developing
+
+### Running Tests
 
 * `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
-## Building
+### Building
 
 * `ember build`
 
