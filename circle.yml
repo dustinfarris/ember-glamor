@@ -1,0 +1,12 @@
+machine:
+  node:
+    version: "stable"
+
+dependencies:
+  pre:
+    - npm config set spin false
+    - npm install -g bower
+    - bower --version
+  override:
+    - npm install
+    - bower install
