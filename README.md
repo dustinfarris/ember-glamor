@@ -1,5 +1,7 @@
 # ember-glamor
 
+[![CircleCI](https://circleci.com/gh/dustinfarris/ember-glamor.svg?style=svg)](https://circleci.com/gh/dustinfarris/ember-glamor)
+
 Use [glamor](https://github.com/threepointone/glamor) in your Ember project.
 
 
