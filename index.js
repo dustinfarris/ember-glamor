@@ -46,14 +46,17 @@ module.exports = {
   },
 
   treeForVendor(vendorTree) {
-    const trees = merge([
-      vendorTree,
+    let trees = [
       this._treeForGlamor(),
       this._treeForGlamorReset()
-    ], {
-      overwrite: true
-    });
+    ];
 
-    return this._super.treeForVendor.call(this, trees);
+    if (vendorTree) {
+      trees.push(vendorTree);
+    }
+
+    return this._super.treeForVendor.call(this, merge(trees, {
+      overwrite: true
+    }));
   }
 };
