@@ -54,9 +54,15 @@ export default Ember.Component.extend({
 
 ## Developing
 
-### Running Tests
+### Installing dependencies
 
-* `npm test` (Runs `ember try:each` to test your addon against multiple Ember versions)
+```
+yarn install && bower install
+```
+
+### Running tests
+
+* `yarn test` (Runs `ember try:each` to test your addon against multiple Ember versions)
 * `ember test`
 * `ember test --server`
 
