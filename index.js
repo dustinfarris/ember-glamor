@@ -11,6 +11,14 @@ const path = require('path');
 module.exports = {
   name: 'ember-glamor',
 
+  config(environment) {
+    return {
+      glamor: {
+        speedy: environment === 'production'
+      }
+    };
+  },
+
   included(app) {
     // see: https://github.com/ember-cli/ember-cli/issues/3718
     if (typeof app.import !== 'function' && app.app) {

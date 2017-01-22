@@ -52,6 +52,19 @@ export default Ember.Component.extend({
 ```
 
 
+## Configure
+
+### `speedy`
+
+[speedy mode](https://github.com/threepointone/glamor#speedy-mode) is enabled in production and is disabled otherwise.  You can override in `config/environment.js`:
+
+```
+if (environment === 'test') {
+  ENV.glamor.speedy = true;
+}
+```
+
+
 ## Developing
 
 ### Installing dependencies
